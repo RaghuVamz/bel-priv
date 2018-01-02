@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<title>Simple app</title>
+<script
+src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.js">
+</script>
+</head>
+<body ng-controller="testController">
+<input type="button" ng-click="dummy()"></input>
+</body>
+<script type="text/javascript">
+function testController($scope, $http){
+    $scope.dummy = function(){
+        alert('asdf');
+    }
+}
+</script>
+</html>
